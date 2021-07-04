@@ -1,0 +1,28 @@
+from datetime import datetime
+now = datetime.now()
+archivo = open('nombres.txt','at')
+nro = 1
+cantidad=0
+archivo.write('Registro de Ventas\n')
+archivo.write('======== == =====\n')
+#Nombre de producto, precio, cantidad
+while True:
+	nombre = input('Ingrese nombre del producto : ')
+	if nombre== '':
+		break
+	nota1 = float(input('Ingrese precio :'))
+	nota2 = float(input('Ingrese cantidad :'))
+	not1=str(nota1)
+	not2=str(nota2)
+	cantidad=nota1*nota2
+	neto = round((cantidad*0.18), 2)
+	final=str(cantidad)
+	netos=str(neto)
+	date_time = now.strftime("%m/%d/%Y, %H:%M:%S")
+	if cantidad>=13:
+		condicion="Aprobado"
+	else:
+		condicion="Desaprobado"
+	archivo.write(nombre+': p/u '+not1+': Cant.'+not2+': '+'sub_total:'+final+': IGV '+netos+': '+date_time+'\n')
+	nro += 1
+archivo.close()
