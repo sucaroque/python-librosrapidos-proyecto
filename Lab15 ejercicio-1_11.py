@@ -27,7 +27,6 @@ class Aritmetica:
      pt=self.a**self.b
      return pt
 precios=Aritmetica(18,13)
-notas=Aritmetica(24,19)
 print(purpura_blanco+"SUMA:"+fin,precios.suma())
 print(purpura_blanco+"RESTA:"+fin,precios.resta())
 print(purpura_blanco+"COCIENTE:"+fin,precios.cociente())
