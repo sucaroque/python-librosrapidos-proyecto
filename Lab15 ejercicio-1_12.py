@@ -27,6 +27,6 @@ class Aritmetica:
      pt=self.a**self.b
      return pt
 edades=Aritmetica(24,19)
-print(verde+"PRODUCTO:"+fin,edades.resta())
+print(verde+"PRODUCTO:"+fin,edades.producto())
 print(verde+"COCIENTE:"+fin,edades.cociente())
 print(verde+"RESIDUO:"+fin,edades.residuo())
