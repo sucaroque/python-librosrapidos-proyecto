@@ -26,8 +26,8 @@ class Aritmetica:
   def potencia(self):
      pt=self.a**self.b
      return pt
-precios=Aritmetica(18,13)
-print(purpura_blanco+"SUMA:"+fin,precios.suma())
-print(purpura_blanco+"RESTA:"+fin,precios.resta())
-print(purpura_blanco+"COCIENTE:"+fin,precios.cociente())
-print(purpura_blanco+"RESIDUO:"+fin,precios.residuo())
+notas=Aritmetica(18,13)
+print(purpura_blanco+"SUMA:"+fin,notas.suma())
+print(purpura_blanco+"RESTA:"+fin,notas.resta())
+print(purpura_blanco+"COCIENTE:"+fin,notas.cociente())
+print(purpura_blanco+"RESIDUO:"+fin,notas.residuo())
